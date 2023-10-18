@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="assets/config.js"></script>
+    <script src="assets/apparence.js" defer></script>
+    <script src="assets/intelligence.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du pendu</title>
+</head>
+<body>
+
+ <div class="titre"><h1>! Le jeu du pendu !</h1></div>  
+
+ <section class="conteneur1">
+
+    <div class="regles">
+
+        <h2>Règles</h2>
+
+        <ul>
+            <li>Au chargement de la page, <b>un mot de 7 lettres</b> est choisi par le programme.</li>
+            <li>Cliquez sur une <b>LETTRE</b></li>
+            <li>Si votre lettre se trouve dans le mot, le programme l'inscrit dans l'un ou ses emplacements en face du mot <b>"RESULTAT"</b> :</li>
+            <li>Si votre lettre ne se trouve pas dans le mot, le programme ajoutera une pièce à la potence</li>
+            <li>Vous devez trouver le mot mystère en <b>8 coups maximum</b> ou vous serez pendu !</li>
+        </ul>
+
+    </div>
+
+    <div class="monpendu"></div>
+ </section>
+
+ <h2>Choisissez une lettre :</h2>
+
+ <section id="conteneur2">
+ </section>
+
+<div class="resultat"><h2>Resultat : <span id="lettre1">_</span> <span id="lettre2">_</span> <span id="lettre3">_</span> <span id="lettre4">_</span> <span id="lettre5">_</span> <span id="lettre6">_</span> <span id="lettre7">_</span> </h2></div>
+<div class="essais"><h2>Essais restants : <span id="essais"></span></h2></div>
+</body>
+</html>

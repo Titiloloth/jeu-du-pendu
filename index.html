@@ -20,27 +20,42 @@
 
     <div class="regles">
 
-        <h2>Règles</h2>
+        <h2 class="couleur-regles">Règles</h2>
 
         <ul>
             <li>Au chargement de la page, <b>un mot de 7 lettres</b> est choisi par le programme.</li>
             <li>Cliquez sur une <b>LETTRE</b></li>
             <li>Si votre lettre se trouve dans le mot, le programme l'inscrit dans l'un ou ses emplacements en face du mot <b>"RESULTAT"</b> :</li>
             <li>Si votre lettre ne se trouve pas dans le mot, le programme ajoutera une pièce à la potence</li>
-            <li>Vous devez trouver le mot mystère en <b>8 coups maximum</b> ou vous serez pendu !</li>
+            <li>Vous devez trouver le mot mystère en <b>7 coups maximum</b> ou vous serez pendu !</li>
         </ul>
 
     </div>
 
-    <div class="monpendu"></div>
+    <div class="monpendu"><img id="potence" src="assets/images/potence/0.png"></img></div>
  </section>
 
- <h2>Choisissez une lettre :</h2>
+<h2>Choisissez une lettre :</h2>
 
  <section id="conteneur2">
  </section>
 
 <div class="resultat"><h2>Resultat : <span id="lettre1">_</span> <span id="lettre2">_</span> <span id="lettre3">_</span> <span id="lettre4">_</span> <span id="lettre5">_</span> <span id="lettre6">_</span> <span id="lettre7">_</span> </h2></div>
 <div class="essais"><h2>Essais restants : <span id="essais"></span></h2></div>
+
+<!-- POPUPS -->
+<div class="modal1" id="modal1">
+    <div class="modal-inner">
+        <h1>Gagné !</h1>
+        <button id="rejouer" onClick="window.location.reload()">Rejouer</button>
+    </div>
+</div>
+
+<div class="modal2" id="modal2">
+    <div class="modal-inner">
+        <h1>Perdu...</h1>
+        <button id="rejouer" onClick="window.location.reload()">Rejouer</button>
+    </div>
+</div>
 </body>
 </html>
